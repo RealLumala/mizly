@@ -1,3 +1,4 @@
+use anchor_lang::prelude::*;
 use crate::state::Pool;
 
 #[derive(Accounts)]
@@ -52,7 +53,7 @@ pub fn initialize(
     pool.fee_bps = fee_bps;
     pool.accumulated_fees_a = 0;
     pool.accumulated_fees_b = 0;
-    pool.bump = *ctx.bumps.get("pool").unwrap();
+    pool.bump = ctx.bumps.pool;
 
     Ok(())
 }

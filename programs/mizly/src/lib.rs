@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("PropAMM1111111111111111111111111111111111111"); // ← Update after first build
+declare_id!("7xSVMPXfSkEuCfGFUttPssszwucmqEUA7oMS6BHUB2br"); // ← Update after first build
 
 pub mod constants;
 pub mod error;
@@ -9,6 +9,8 @@ pub mod state;
 pub mod utils;
 
 use crate::instructions::*;
+use error::ErrorCode;
+use state::*;
 
 #[program]
 pub mod prop_amm {

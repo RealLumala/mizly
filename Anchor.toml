@@ -1,13 +1,13 @@
 [toolchain]
-package_manager = "yarn"
 anchor_version = "0.32.1"
+package_manager = "yarn"
 
 [features]
 resolution = true
 skip-lint = false
 
 [programs.localnet]
-mizly = "APQtcvd4R68x6a8DcLCjyQWryyLn3UcoSEmuPUsbj3B9"
+mizly = "7xSVMPXfSkEuCfGFUttPssszwucmqEUA7oMS6BHUB2br"
 
 [registry]
 url = "https://api.apr.dev"
