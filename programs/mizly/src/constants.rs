@@ -1,0 +1,1 @@
+pub const FEE_DENOMINATOR: u64 = 10_000;
