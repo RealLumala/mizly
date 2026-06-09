@@ -4,8 +4,6 @@ use anchor_lang::prelude::*;
 pub enum ErrorCode {
     #[msg("Invalid price")]
     InvalidPrice,
-    #[msg("Insufficient liquidity")]
-    InsufficientLiquidity,
     #[msg("Math overflow")]
     MathOverflow,
     #[msg("Zero amount")]
