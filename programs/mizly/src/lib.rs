@@ -12,7 +12,7 @@ use crate::instructions::*;
 use error::ErrorCode;
 
 #[program]
-pub mod prop_amm {
+pub mod mizly {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>, fee_bps: u16, initial_price: u64, price_decimals: u8) -> Result<()> {
