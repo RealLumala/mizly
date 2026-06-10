@@ -10,7 +10,6 @@ pub mod utils;
 
 use crate::instructions::*;
 use error::ErrorCode;
-use state::*;
 
 #[program]
 pub mod prop_amm {
