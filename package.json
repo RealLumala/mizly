@@ -1,9 +1,13 @@
 {
-  "license": "ISC",
+    "name": "mizly-monorepo",
+  "private": true,
+  "workspaces": ["app"],
   "scripts": {
-    "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+    "dev": "yarn workspace @mizly/app dev",
+    "build": "yarn workspace @mizly/app build"
   },
+  "license": "ISC",
+
   "dependencies": {
     "@coral-xyz/anchor": "^0.32.1"
   },
